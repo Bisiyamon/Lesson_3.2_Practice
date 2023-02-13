@@ -24,7 +24,7 @@ void PrintArray(int[] PrintNumber)
     }
 }
 
-int Comparison(int[] number) 
+int ComparisonMax(int[] number) 
 {
     int index = 0;
     int max = 0;
@@ -40,6 +40,22 @@ int Comparison(int[] number)
     return max;
 } 
 
+int ComparisonMin(int[] number) 
+{
+    int index = 0;
+    int min = number[index];
+
+    while(index < n)
+    {
+        if(number[index] < min)
+        {
+            min = number[index];
+        }
+        index++;
+    }
+    return min;
+} 
+
 int[] array = new int[n];
 
 Console.WriteLine("Enter numbers");
@@ -52,7 +68,12 @@ PrintArray(array);
 Console.WriteLine();
 Console.WriteLine();
 
-int maxnumber = Comparison(array);
-Console.Write("Max number in your array: ");
+int minnumber = ComparisonMin(array);
+Console.Write("Minimal number in your array: ");
+Console.WriteLine(minnumber);
+Console.WriteLine();
+
+int maxnumber = ComparisonMax(array);
+Console.Write("Maximum number in your array: ");
 Console.WriteLine(maxnumber);
 Console.WriteLine();
