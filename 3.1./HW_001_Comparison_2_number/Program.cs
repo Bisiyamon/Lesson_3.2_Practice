@@ -1,4 +1,4 @@
-﻿Console.Write("Input amout varriables: ");
+﻿Console.Write("Input amount varriables: "); //Вводим количество цифр для ввода
 int n = Convert.ToInt32(Console.ReadLine());
 
 void FillArray(int[] numbers)
