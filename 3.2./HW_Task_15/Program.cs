@@ -1,8 +1,10 @@
 ﻿Console.Write("Enter a day of week: ");
 string DayOfWeek = Console.ReadLine();
  
+//Проверка являются ли введенные данные число или символами(буквы) 
 if(int.TryParse(DayOfWeek,out int number))
 {
+    //Условия вывода информации если введено число
    switch(number)
     {
     case 1:
@@ -33,6 +35,7 @@ if(int.TryParse(DayOfWeek,out int number))
 }
 else
 {
+    //Условия вывода информации если введено название дня
     switch(DayOfWeek)
     {
     case "Monday":

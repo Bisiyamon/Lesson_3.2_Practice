@@ -1,8 +1,11 @@
-﻿Console.Write("Input your number: ");
+﻿//Вводим число
+Console.Write("Input your number: ");
 string num = Console.ReadLine();
 
+//Переводим число в массив из цифр
 char[] symbols = num.ToCharArray();
 
+//Вывод числа в ввиде отдельных цифр массива
 foreach (char ch in symbols)
 {
     Console.Write(" / ");
@@ -10,6 +13,7 @@ foreach (char ch in symbols)
 }
 Console.WriteLine(" /");
 
+//Вводим номер позиции числа, которое необходимо показать
 Console.WriteLine();
 Console.Write("Please specify the number of position of the digit to be showed: ");
 int input_position = Convert.ToInt32(Console.ReadLine());
